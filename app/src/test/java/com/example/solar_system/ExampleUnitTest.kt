@@ -1,4 +1,4 @@
-package com.example.animals_app
+package com.example.solar_system
 
 import org.junit.Test
 
