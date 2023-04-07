@@ -10,4 +10,7 @@
     <color name="yellow">#FFfad505</color>
     <color name="gray">#FF1a1a1c</color>
     <color name="primary">#333366</color>
+    <color name="secondary">#5C5493</color>
+    <color name="subtext">#DDDBDB</color>
+    <color name="background">#5C5493</color>
 </resources>

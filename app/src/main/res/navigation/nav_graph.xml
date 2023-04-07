@@ -3,10 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/solarFragment2">
+    app:startDestination="@id/solarFragment">
     <fragment
-        android:id="@+id/solarFragment2"
+        android:id="@+id/solarFragment"
         android:name="com.example.solar_system.SolarFragment"
         android:label="fragment_solar"
-        tools:layout="@layout/fragment_solar" />
+        tools:layout="@layout/fragment_solar" >
+        <action
+            android:id="@+id/action_solarFragment_to_definitionFragment"
+            app:destination="@id/definitionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/definitionFragment"
+        android:name="com.example.solar_system.DefinitionFragment"
+        android:label="fragment_definition"
+        tools:layout="@layout/fragment_definition" >
+        <argument
+            android:name="planet"
+            app:argType="com.example.solar_system.PlanetData" />
+    </fragment>
 </navigation>
